@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Operaters-js</title>
+    <style>
+      .main-content {
+        padding: 0 100px;
+        text-align: center;
+      }
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 40px;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      .calc-btn {
+        width: 100px;
+        height: 30px;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+      #act-p,
+      #sell-p {
+        height: 30px;
+        padding: 0 5px;
+      }
+      .calculator table tr td {
+        text-align: center;
+        height: 60px;
+        cursor: pointer;
+        font-size: 1.3rem;
+      }
+      .calculator table tr td:hover {
+        background-color: lightgrey;
+      }
+      .calculator table tr .oper,
+      .clear {
+        color: orange;
+        font-size: 1.5rem;
+        background-color: rgb(229, 226, 226);
+      }
+      .calculator table tr .equal {
+        background-color: #086972;
+        font-size: 2rem;
+        color: white;
+      }
+      .calculator table tr .equal:hover {
+        background-color: #17b978;
+      }
+      .calculator table tr td {
+        width: 50px;
+      }
+      .calculator table tr th {
+        padding: 0;
+      }
+      .view-value {
+        padding: 5px 10px;
+        width: 100%;
+        height: 70px;
+        font-size: 3rem;
+        border: none;
+        text-align: right;
+        letter-spacing: 1.2px;
+        background-color: #086972;
+        color: white;
+      }
+      .view-value::placeholder {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title">Js Operaters</h1>
+    </div>
+    <div class="main-content">
+      <h2>Finding Discount Percent</h2>
+      <table style="margin-bottom: 30px">
+        <tr>
+          <td>Actual Price</td>
+          <td><input type="number" id="act-p" placeholder="Actual Price in rs" min="0" name="actPrice" /></td>
+        </tr>
+        <tr>
+          <td>Selling Price</td>
+          <td><input type="number" id="sell-p" placeholder="Selling Price in rs" min="0" name="sellPrice" /></td>
+        </tr>
+        <tr>
+          <td><h3>Discount Percent</h3></td>
+          <td><h2 class="disc-per">0</h2></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center"><button class="calc-btn">Calculate</button></td>
+        </tr>
+      </table>
+    </div>
+    <hr />
+    <section class="calculator">
+      <h1 style="text-align: center; margin-top: 20px">Calculator</h1>
+      <table style="width: 280px; margin: 20px auto">
+        <tr>
+          <th colspan="4">
+            <input class="view-value" max="10000" placeholder="00" type="tel" min="0" placeholder="00" />
+          </th>
+        </tr>
+        <tr>
+          <td class="clear">AC</td>
+          <td class="oper">%</td>
+          <td class="oper">/</td>
+          <td class="oper">*</td>
+        </tr>
+        <tr>
+          <td class="num">7</td>
+          <td class="num">8</td>
+          <td class="num">9</td>
+          <td class="oper">-</td>
+        </tr>
+        <tr>
+          <td class="num">4</td>
+          <td class="num">5</td>
+          <td class="num">6</td>
+          <td class="oper">+</td>
+        </tr>
+        <tr>
+          <td class="num">1</td>
+          <td class="num">2</td>
+          <td class="num">3</td>
+          <td rowspan="2" class="equal">=</td>
+        </tr>
+        <tr>
+          <td class="num">0</td>
+          <td class="num">00</td>
+          <td class="oper"></td>
+        </tr>
+      </table>
+    </section>
+
+    <script src="./Operaters.js"></script>
+  </body>
+</html>

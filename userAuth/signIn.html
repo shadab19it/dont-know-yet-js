@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>user-Auth</title>
+    <style>
+      .main-content {
+        display: flex;
+        justify-content: center;
+      }
+      .auth-wrapper {
+        min-width: 400px;
+        margin-top: 50px;
+        padding: 20px;
+        border: 1px solid black;
+      }
+      h3 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+      .form-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+      }
+      label {
+        margin-bottom: 5px;
+        font-size: 1.3rem;
+      }
+      .input {
+        font-size: 1.2rem;
+        padding: 5px 10px;
+      }
+      #submit {
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      .go-link {
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title">User Auth</h1>
+    </div>
+    <div class="main-content">
+      <div class="auth-wrapper">
+        <form>
+          <h3>Sign In</h3>
+          <div class="form-item">
+            <label for="email">Email</label>
+            <input class="input" type="email" id="email" placeholder="Email" name="email" required />
+          </div>
+          <div class="form-item">
+            <label for="email">Password</label>
+            <input class="input" type="password" id="password" placeholder="Password" name="password" required />
+          </div>
+          <div class="form-item">
+            <input class="input" type="submit" id="submit" placeholder="Submit" />
+          </div>
+          <a href="./index.html" class="go-link">Create an Account ?</a>
+        </form>
+      </div>
+    </div>
+
+    <script src="./userAuth.js"></script>
+  </body>
+</html>
